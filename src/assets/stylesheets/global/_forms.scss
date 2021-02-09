@@ -1,0 +1,34 @@
+// ==========================================================================
+// GLOBAL | Forms
+// ==========================================================================
+
+label { }
+
+// -----
+
+input {
+  &:-webkit-autofill {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      -webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
+      -webkit-transition-delay: 9999s;
+    }
+  }
+}
+
+[type="text"],
+[type="password"],
+[type="search"],
+[type="email"] {
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &::placeholder { }
+}

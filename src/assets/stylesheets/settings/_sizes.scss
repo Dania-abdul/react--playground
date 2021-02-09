@@ -1,0 +1,24 @@
+// ==========================================================================
+// SETTINGS | Sizes
+// Variables concerning sizes: spacing, gutters, widhts, breakpoints...
+// ==========================================================================
+
+// ----- Fluid sizing thresholds
+$threshold--mobile: 320px;
+$threshold--desktop: 1440px;
+
+// ----- Widths
+$width--m: 1280px;
+$width--m-gutter: 1440px; // This variable contains the default desktop gutter: in this example two times 80px
+
+// ----- Gutters (these variable are used for vertical spacing)
+$gutter--m: 40px;
+
+// ----- Spacings (these variable are used for horizontal spacing)
+$spacing--m: 40px;
+
+// ----- Breakpoints (EXAMPLES!)
+$breakpoint--mobile--m: 480px;
+$breakpoint--tablet--m: 768px;
+$breakpoint--tablet--l: 1024px;
+$breakpoint--desktop--m: 1280px;

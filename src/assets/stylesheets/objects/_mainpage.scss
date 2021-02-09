@@ -1,0 +1,75 @@
+
+
+.main--page {
+    height: 100%;  
+    overflow: scroll;
+}
+
+.main__header {
+    min-height: 160px;
+    background-color: #61DBFB;
+    text-align: center;
+    padding: 40px 0;
+    h1{
+        color:  white;
+    }
+}
+
+.main__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    background: lightgray;
+    padding-top: 40px;
+    min-height: 100%;
+}
+
+.project-section {
+    padding-bottom: 30px;
+    margin: 0 40px;
+
+}
+
+.project-section__text {
+    padding-bottom: 20px;
+}
+
+.project-section__header {
+    width: 100%;
+    padding:20px;
+    background-color:gray;
+    color: white;
+}
+.project-section__content{
+    background-color: whitesmoke;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: height 0ms 400ms, opacity 400ms 0ms;
+    &.item-active {
+        height: auto;
+        opacity: 1;
+        transition: height 0ms 0ms, opacity 600ms 0ms;
+        padding: 20px; 
+    }
+}
+
+
+
+
+.counter {
+    button {
+        background-color: #5f98cd;
+        color:white;
+        padding: 20px;
+        min-width: 150px;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+}
+
+
+h1, p {
+    font-family: Lato;
+  }
+ 

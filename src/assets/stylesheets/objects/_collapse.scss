@@ -1,0 +1,81 @@
+ 
+  
+
+
+.collapse__desc {
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.collaps-single__header {
+  cursor: pointer;
+  padding: 15px;
+  background-color: #5f98cd;
+  color: #FFF;
+  font-family: verdana;
+}
+
+
+
+.collaps-single__content {
+  cursor: pointer;
+  border: solid 1px 5f98cd;
+  border-radius: 0 0 5px 5px;
+  background-color: white;
+  color: navy;
+  padding: 15px;
+  font-family: verdana;
+  font-size: 14px;
+}
+
+  .collapse-multi {
+    margin-top: 50px;
+  }
+
+  .col-multi__nav-menu-item{
+    display:block;
+    margin-bottom: 5px;
+ }
+ .col-multi__nav-menu-item-body{
+   /*This is equivalent to display: none*/
+   overflow: hidden; 
+   height: 0; 
+   opacity: 0;
+   background: white;
+   transition: height 0ms 400ms, opacity 400ms 0ms;
+ }
+ .col-multi__nav-menu-item.item-active .col-multi__nav-menu-item-body{
+   /*This is equivalent to display: block*/
+   height: auto; 
+   opacity: 1;
+   transition: height 0ms 0ms, opacity 600ms 0ms;
+   padding: 10px;
+
+ }
+ 
+ .col-multi__nav-menu-item-head-help{
+   /*To move button in header to right*/
+   position: absolute;
+   right: 35px;
+ }
+ 
+ .col-multi__nav-menu-item-head{
+   /*To style header*/
+    background-color:  #5f98cd;
+    color: white;
+    padding: 10px;
+    position: relative;
+ }
+ 
+ .col-multi__nav-menu-item-head:after {
+   /*To add caret down icon - by default*/
+   content: "\f0d7"; /* fa-caret-down */
+   font-family: 'FontAwesome';
+   position: absolute;
+   right: 12px;
+ }
+ 
+ .col-multi__nav-menu-item.item-active .col-multi__nav-menu-item-head:after {
+   /*This will add caret up when collapsiable is active*/
+   content: "\f0d8"; /* fa-caret-up */
+ }

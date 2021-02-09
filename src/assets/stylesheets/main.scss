@@ -1,0 +1,53 @@
+// ==========================================================================
+// The SCSS folder is structured using the ITCSS principle (Hoppinger Style):
+// - SETTINGS: for variables
+// - TOOLS: for mixins/functions
+// - VENDOR: for third-party styling
+// - GLOBAL: for element styling - no classes or IDs
+// - OBJECTS: for shared styling - OOCSS!
+// - PAGES: for specific page styling - as less as possible
+// - OVERWRITES: for overwriting styles - this is the only place where the `!important` tag is acceptable.
+// ==========================================================================
+  
+@charset 'UTF-8';
+
+// ==========================================================================
+// SETTINGS
+// ==========================================================================
+@import './settings/colors';
+@import './settings/misc';
+@import './settings/sizes';
+@import './settings/typography';
+
+// ==========================================================================
+// TOOLS
+// ==========================================================================
+@import './tools/functions';
+@import './tools/mixins';
+
+
+// ==========================================================================
+// GLOBAL
+// ==========================================================================
+@import './global/buttons';
+@import './global/core';
+@import './global/forms';
+@import './global/links';
+@import './global/lists';
+@import './global/media';
+@import './global/tables';
+@import './global/typography';
+
+// ==========================================================================
+// OBJECTS
+// ==========================================================================
+@import './objects/helpers';
+@import './objects/links';
+@import './objects/lists';
+@import './objects/media';
+@import './objects/typography';
+
+
+@import 'objects/mainpage';
+@import 'objects/collapse';
+
