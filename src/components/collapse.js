@@ -1,10 +1,6 @@
 
 
 import React from 'react';
-import ReactDOM from 'react-dom';
-
-import Layout from '../Layout';
-
 
 export class ObjectCollaps extends React.Component {
   render() {

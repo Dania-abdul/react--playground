@@ -1,7 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-
-import Layout from '../Layout';
 
 export class ClickCounter extends React.Component {
     constructor(props) {

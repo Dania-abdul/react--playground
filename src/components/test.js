@@ -1,5 +1,3 @@
-import React, { useCallback } from 'react';
-import ReactDOM from 'react-dom';
 
 
 export class TestProject extends React.Component {

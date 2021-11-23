@@ -1,7 +1,5 @@
 
 import React from 'react';
-import ReactDOM from 'react-dom';
-
 
 export class Clock extends React.Component {
     constructor(props) {
@@ -35,7 +33,7 @@ export class Clock extends React.Component {
       const { hours, minutes, seconds, ampm } = this.state;
         return (
         <div className="clock">
-          { hours == 0 ? 12 : (hours > 12) ? hours - 12 : hours}
+          { hours === 0 ? 12 : (hours > 12) ? hours - 12 : hours}
           :{ minutes > 9 ? minutes : `0${minutes}`}
           :{ seconds > 9 ? seconds : `0${seconds}`} 
           {ampm}

@@ -1,9 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types'
 
-
-import Layout from '../Layout';
 import {data} from '../data';
 
 import Clock from './clock';

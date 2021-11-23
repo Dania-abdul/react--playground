@@ -1,7 +1,9 @@
 
 import React from 'react';
-import ReactDOM from 'react-dom';
-// import "whatwg-fetch";
+import { BrowserRouter as Router,
+  Route, 
+  Routes,
+} from "react-router-dom";
 
 import './App.css';
 import '../src/assets/stylesheets/timeline.css';
@@ -12,7 +14,16 @@ import Layout from './Layout'
 function App() {
 
   return (
-        <Layout />    
+    <Router>
+      <Routes>
+        {/* <Route path="/home">Home</Route> */}
+        <Route path="/list" element={ <Layout />} />
+        {/* <Route path="/page">Page</Route> */}
+      </Routes> 
+    </Router>
+
+
+ 
   );
 }
 
