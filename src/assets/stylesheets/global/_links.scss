@@ -2,12 +2,19 @@
 // GLOBAL | Links
 // ==========================================================================
 
+
 a {
-  text-decoration-ink: skip;
-  transition: color $transition--normal, background-color $transition--normal, border-color $transition--normal;
+  text-decoration: none;
+  line-height: 1.5;
+  color: var(--link-color); 
+  display: inline-block;
+  transition: color 0.3s ;
 
   &:hover,
-  &:focus { }
+  &:focus { 
+    color: coral;      
+    text-decoration: none;
+  }
 
   &:focus {
     outline: none;

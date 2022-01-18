@@ -40,3 +40,12 @@
     }
   }
 }
+
+.list-wrap {
+  max-height: 220px;
+  overflow: hidden;
+  overflow-y: scroll;
+  background: lightgray;
+  padding: 15px;
+  margin-top: 10px;
+}
