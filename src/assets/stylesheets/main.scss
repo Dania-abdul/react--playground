@@ -19,18 +19,25 @@
 @import './settings/sizes';
 @import './settings/typography';
 
+
+// ==========================================================================
+// VENDOR
+// ==========================================================================
+
+@import './vendor/normalize';
+
 // ==========================================================================
 // TOOLS
 // ==========================================================================
-@import './tools/functions';
+// @import './tools/functions';
 @import './tools/mixins';
 
 
 // ==========================================================================
 // GLOBAL
 // ==========================================================================
-@import './global/buttons';
 @import './global/core';
+@import './global/buttons';
 @import './global/forms';
 @import './global/links';
 @import './global/lists';
@@ -41,14 +48,20 @@
 // ==========================================================================
 // OBJECTS
 // ==========================================================================
+@import './objects/buttons';
+@import './objects/chapters';
+@import './objects/styleguide-core';
+@import './objects/tokens.scss';
+@import './objects/tables';
+@import './objects/sections';
+@import './objects/parts';
+
 @import './objects/helpers';
 @import './objects/links';
 @import './objects/lists';
 @import './objects/media';
 @import './objects/typography';
 
-
 @import 'objects/mainpage';
 @import 'objects/collapse';
 @import 'objects/header';
-

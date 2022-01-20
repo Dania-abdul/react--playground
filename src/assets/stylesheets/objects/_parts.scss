@@ -1,0 +1,48 @@
+// ==========================================================================
+// OBJECTS | Part
+// ==========================================================================
+
+.styleguide-part__header {
+  background-color: $styleguide-color--white-400;
+  font-size: $styleguide-size--16px;
+  line-height: $styleguide-size--30px;
+  padding: 10px 30px;
+  margin-bottom: 30px;
+}
+
+.styleguide-part__intro {
+  max-width: 700px;
+  padding: 0 30px 30px;
+}
+
+.styleguide-part__description {
+  font-size: $styleguide-size--14px;
+  line-height: $styleguide-size--24px;
+}
+
+// ==========================================================================
+// OBJECTS | Part / Example
+// ==========================================================================
+
+.styleguide-example {
+  padding-bottom: 40px;
+}
+
+.styleguide-example__title {
+  font-size: $styleguide-size--14px;
+  line-height: $styleguide-size--24px;
+  padding: 0 30px 10px;
+}
+
+.styleguide-example__section {
+  .styleguide-chapter--objects & {
+    padding: 10px 30px 0;
+  }
+
+  .styleguide-chapter--components &,
+  .styleguide-chapter--compositions & {
+    box-shadow: 0 0 10px 5px rgba(0,0,0,.1);
+    background-color: $styleguide-color--white-800;
+    margin: 0 -30px;
+  }
+}

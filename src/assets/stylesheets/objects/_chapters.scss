@@ -1,0 +1,36 @@
+// ==========================================================================
+// OBJECTS | Chapter
+// ==========================================================================
+
+.styleguide-chapter {
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.styleguide-chapter__content--plain {
+  font-family: $styleguide-font--base;
+
+  p {
+    margin: 0 0 30px;
+    padding: 0;
+  }
+}
+
+.styleguide-chapter--about,
+.styleguide-chapter--guidelines {
+  max-width: 900px;
+}
+
+.styleguide-chapter--tokens {
+  max-width: 1200px;
+}
+
+.styleguide-chapter__header {
+  margin-bottom: 50px;
+  max-width: 900px;
+}
+
+.styleguide-chapter__intro {
+  font-size: $styleguide-size--18px;
+  line-height: $styleguide-size--30px;
+}

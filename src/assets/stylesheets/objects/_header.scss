@@ -1,5 +1,8 @@
+// ==========================================================================
+// OBJECTS | Headers
+// ==========================================================================
 
-
+// internal pages
 .navbar-list {
     display: flex;
     flex-direction: row;
@@ -12,3 +15,279 @@
     padding-left: 40px;
     padding-right: 40px;
 }
+
+// ==========================================================================
+// OBJECTS | Headers | styleguide
+// ==========================================================================
+
+.styleguide__header {
+    background-color: $primary;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .styleguide__brand {
+    padding: 20px 30px;
+    height: 100px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .styleguide__logo-link {
+    display: inline-block;
+  }
+  
+  .styleguide__logo {
+    width: auto;
+    height: auto;
+    max-width: 220px;
+    height: 40px;
+    display: block;
+  }
+  
+  .styleguide__subtitle {
+    display: block;
+    color: $styleguide-color--white-800;
+    font-size: $styleguide-size--12px;
+    line-height: 1;
+    padding-top: 5px;
+    clear: both;
+  }
+  
+  // ==========================================================================
+  // OBJECTS | Navigation
+  // ==========================================================================
+  
+  .styleguide-nav__wrapper {
+    display: none;
+  
+    @media only screen and (min-width: $styleguide-breakpoint) {
+      display: block;
+      background-color: $styleguide-color--black-200;
+      position: fixed;
+      top: 100px;
+      right: 0;
+      width: 260px;
+      height: calc(100% - 100px);
+      transform: translateX(260px);
+      transition: transform 0.3s;
+      overflow-y: auto;
+    }
+  }
+  
+  .styleguide-toggler {
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    padding: 0;
+    margin-top: -30px;
+  
+    span:not(.sr-text) {
+      display: block;
+      height: 3px;
+      width: 30px;
+      background-color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transition: opacity 0.3s, transform 0.3s;
+    }
+  
+    span:nth-child(2) {
+      margin-top: -9px;
+    }
+  
+    span:nth-child(5) {
+      margin-top: 9px;
+    }
+  }
+  
+  .styleguide-nav--toggled {
+    .styleguide-toggler {
+      span:nth-child(2),
+      span:nth-child(5) {
+        opacity: 0;
+      }
+  
+      span:nth-child(3) {
+        transform: rotate(45deg);
+      }
+  
+      span:nth-child(4) {
+        transform: rotate(-45deg);
+      }
+    }
+  
+    @media only screen and (max-width: $styleguide-breakpoint - 1) {
+      overflow: hidden;
+  
+      .styleguide__header {
+        height: 100%;
+        overflow-y: scroll;
+      }
+  
+      .styleguide-nav {
+        flex-grow: 1;
+      }
+  
+      .styleguide-nav__wrapper {
+        display: block;
+      }
+    }
+  
+    @media only screen and (min-width: $styleguide-breakpoint) {
+      .styleguide-nav__wrapper {
+        transform: translateX(0);
+      }
+    }
+  }
+  
+  .styleguide-tokens--toggled .styleguide-nav--tokens,
+  .styleguide-objects--toggled .styleguide-nav--objects,
+  .styleguide-components--toggled .styleguide-nav--components,
+  .styleguide-compositions--toggled .styleguide-nav--compositions {
+    .styleguide-nav__sublist {
+      display: block;
+    }
+  
+    .styleguide-nav__toggler {
+      &:before {
+        transform: rotate(-45deg);
+      }
+    
+      &:after {
+        transform: rotate(45deg);
+      }
+    }
+  }
+  
+  [data-active-page="about"] .styleguide-nav--about,
+  [data-active-page="guidelines"] .styleguide-nav--guidelines,
+  [data-active-page="tokens"] .styleguide-nav--tokens,
+  [data-active-page="objects"] .styleguide-nav--objects,
+  [data-active-page="components"] .styleguide-nav--components,
+  [data-active-page="compositions"] .styleguide-nav--compositions {
+    &.styleguide-nav__item {
+      position: relative;
+    
+      &:before {
+        content: '';
+        position: absolute;
+        background-color: $styleguide-color--red-400;
+        top: 16px;
+        bottom: 48px;
+        left: 0;
+        width: 8px;
+        height: auto;
+        min-height: 18px;
+      }
+    }
+  }
+  
+  .styleguide-nav {
+    @media only screen and (min-width: $styleguide-breakpoint) {
+      min-height: calc(100% - 95px);
+    }
+  }
+  
+  .styleguide-nav__list {
+    list-style: none;
+    padding: 30px 0 60px;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .styleguide-nav__sublist {
+    display: none;
+    padding: 0 0 40px;
+  }
+  
+  .styleguide-nav__link {
+    color: $styleguide-color--white-800;
+    font-family: $styleguide-font--base;
+    font-size: $styleguide-size--16px;
+    line-height: 2;
+    display: block;
+    padding: 8px 30px;
+    text-decoration: none;
+  
+    .styleguide-nav__sublist & {
+      font-size: $styleguide-size--14px;
+      padding: 2px 20px 2px 50px;
+    }
+  
+    &:hover,
+    &:focus {
+      color: $styleguide-color--red-400;
+    }
+  }
+  
+  .styleguide-nav__toggler {
+    padding-right: 60px;
+    position: relative;
+  
+    &:after,
+    &:before {
+      content: '';
+      width: 10px;
+      height: 1px;
+      background-color: $styleguide-color--grey-400;
+      position: absolute;
+      top: 50%;
+    }
+  
+    &:before {
+      transform: rotate(45deg);
+      right: 30px;
+    }
+  
+    &:after {
+      transform: rotate(-45deg);
+      right: 37px;
+    }
+  }
+  
+  // ==========================================================================
+  // OBJECTS | Extra
+  // ==========================================================================
+  
+  .styleguide__extra {
+    padding: 30px;
+  }
+  
+  .styleguide__extra-link {
+    color: $styleguide-color--white-800;
+    font-size: $styleguide-size--14px;
+    line-height: $styleguide-size--24px;
+    line-height: 35px;
+    display: block;
+    position: relative;
+    padding-left: 60px;
+  
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 21px 35px 21px;
+      border-color: transparent transparent $styleguide-color--red-400 transparent;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -17.5px;
+    }
+  
+    &:hover,
+    &:focus {
+      color: $styleguide-color--red-400;
+    }
+  }
+  

@@ -19,3 +19,17 @@
 .fit-object {
   @include objectfit-mq;
 }
+
+// ----- Fullscreen || Usage: fullscreen components (for example headers & menu's) and compositions */
+
+.fs {
+  height: calc(100vh - 100px); // 100px = Height of header
+  position: relative;
+  transform: translate3d(0, 0, 0);
+  overflow: hidden;
+
+  > .fs__inner {
+    overflow: auto;
+    height: 100%;
+  }
+}

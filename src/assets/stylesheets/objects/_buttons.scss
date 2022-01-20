@@ -1,0 +1,27 @@
+// ==========================================================================
+// OBJECTS | Buttons
+// ==========================================================================
+
+.styleguide--styled {
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    background-color: transparent;
+    border: 0;
+    appearance: none;
+    cursor: pointer;
+    vertical-align: middle;
+    user-select: none;
+    text-decoration: none;
+    display: inline-block;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+}

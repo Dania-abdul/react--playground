@@ -9,6 +9,7 @@ import { BrowserRouter as Router,
 import Header from './components/header';
 import Components from './pages/components';
 import Home from './pages/home';
+import StyleGuide from './pages/styleguide/main';
 
 
 export class Layout extends React.Component {
@@ -25,6 +26,7 @@ export class Layout extends React.Component {
                         <Routes>
                             <Route path="/home" element={<Home />} />
                             <Route path="/components" element={ <Components />} />
+                            <Route path="/styleguide" element={ <StyleGuide />} />
                         </Routes>
                     </div>
                 </HashRouter>

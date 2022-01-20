@@ -1,0 +1,65 @@
+// ==========================================================================
+// OBJECTS | Tables
+// ==========================================================================
+
+.styleguide-table {
+  table-layout: fixed;
+  width: 100%;
+  text-align: left;
+  border-spacing: 0;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.styleguide-table__heading {
+  background-color: $styleguide-color--white-400;
+}
+
+.styleguide-table__label {
+  font-size: $styleguide-size--16px;
+  line-height: $styleguide-size--30px;
+  padding: 10px 30px;
+}
+
+.styleguide-table__label--token,
+.styleguide-table__label--attributes {
+  width: 250px;
+}
+
+.styleguide-table__heading--2-column {
+  .styleguide-table__label--token,
+  .styleguide-table__label--attributes {
+    width: 50%;
+  }
+}
+
+.styleguide-table__row {
+  border-bottom: solid 1px $styleguide-color--white-400;
+}
+
+.styleguide-table__seperator {
+  background-color: $styleguide-color--white-400;
+  padding: 0;
+  height: 4px;
+}
+
+.styleguide-table__cell {
+  padding: 15px 30px;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+
+  p {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+// ==========================================================================
+// OBJECTS | Tokens
+// ==========================================================================
+
+.styleguide-token__code {
+    font-family: $styleguide-font--code;
+    font-size: $styleguide-size--14px;
+    line-height: $styleguide-size--30px;
+    display: block;
+  }
+  
+  .styleguide-token__description {
+    font-size: $styleguide-size--14px;
+    line-height: $styleguide-size--24px;
+    display: block;
+    margin: 0;
+  }
+  
+  .styleguide-token__attribute {
+    font-size: $styleguide-size--16px;
+    line-height: $styleguide-size--24px;
+    display: block;
+  }
+  
+  .styleguide-token__icon {
+    display: block;
+  }
+  
+  [class^="styleguide-token__color"] {
+    border-radius: 50%;
+    width: 66px;
+    height: 66px;
+  }
+  
+  .styleguide-token__color--border {
+    border: solid 1px $styleguide-color--grey-400;
+  }
+  
+  // ==========================================================================
+  // OBJECTS | Tokens / Colors
+  // ==========================================================================
+  
+  // @each $styleguide-color in $list--colors { // ! This list is defined in the project CSS
+  //   .token-color--#{str-slice('#{$styleguide-color}', 2, 7)} { 
+  //     background-color: $styleguide-color;
+  //   }
+  // }
+  
+  // TEMPORARY: for skeleton purposes only!
+  // The loop above should be used for actual styleguide!
+  .token-color--FFFFFF {
+    background-color: #FFFFFF;
+  }
+  .token-color--000000 {
+    background-color: #000000;
+  }
+  // \TEMPORARY: for skeleton purposes only
+  
+  // ==========================================================================
+  // OBJECTS | Tokens / Weights
+  // ==========================================================================
+  
+  // @each $weight in $list--weights { // ! This list is defined in the project CSS
+  //   .token-weight--#{$weight} { 
+  //     font-weight: $weight;
+  //   }
+  // }
+  
+  // TEMPORARY: for skeleton purposes only
+  // The loop above should be used for actual styleguide!
+  .token-weight--400 {
+    font-weight: 400;
+  }
+  .token-weight--700 {
+    font-weight: 700;
+  }
+  // \TEMPORARY: for skeleton purposes only
+  
+  // ==========================================================================
+  // OBJECTS | Tokens / Styles
+  // ==========================================================================
+  
+  // @each $style in $list--styles { // ! This list is defined in the project CSS
+  //   .token-style--#{$style} { 
+  //     font-style: $style;
+  //   }
+  // }
+  
+  // TEMPORARY: for skeleton purposes only
+  // The loop above should be used for actual styleguide!
+  .token-style--italic {
+    font-style: italic;
+  }
+  // \TEMPORARY: for skeleton purposes only
+  

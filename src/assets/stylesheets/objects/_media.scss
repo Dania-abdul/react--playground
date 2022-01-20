@@ -13,3 +13,16 @@ img {
     transition: opacity $transition--normal;
   }
 }
+
+.styleguide--styled {
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  svg {
+    display: block;
+  }
+}
+
