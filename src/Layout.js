@@ -19,7 +19,7 @@ export class Layout extends React.Component {
     }
     render() {
         return (
-            <div className="main--page">
+            <div className="main--page custom--styled">
                 <HashRouter>
                     <Header />
                     <div className="main__container">

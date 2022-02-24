@@ -3,46 +3,22 @@
 // Variables concerning miscellaneous: colors...
 // ==========================================================================
 
-// todo - change into root variables
-
-// ----- Yellow
-$styleguide-color--yellow-400: #beff25;
-// ----- Black
-$styleguide-color--black-0: #000000;
-$styleguide-color--black-200: #28292B;
-
-// ----- Grey
-$styleguide-color--grey-400: #979797;
+// ----- pink 
+$color--blue-600: #6a8eb3;
+$color--blue-800: #121920;
 
 // ----- White
-$styleguide-color--white-400: #E8E8E8;
-$styleguide-color--white-600: #FAFAFA;
-$styleguide-color--white-800: #FFFFFF;
+$color--white-400: #E8E8E8;
+$color--white-600: #FAFAFA;
+$color--white-800: #FFFFFF;
 
-$styleguide-color--red-400: #750c0c;
-
-// ---- blue
-$styleguide-color--blue-400: #4d72bb;
-$styleguide-color--blue-600: #dbeeff;
-
-// ---- colors instance
-
-$primary: $styleguide-color--blue-400;
+// ----- pink 
+$color--pink-600: #f5caea;
 
 
+// --- implementations
+$color-primary: $color--blue-600;
 
-// styleguide
-// move 
-.token-color--FF6619 {
-    background-color: #FF6619;
-}
-.token-color--000000 {
-    background-color: #000000;
-}
-.token-color--252629 {
-    background-color: #252629;
-}
+$color-links: $color--pink-600;
 
-.token-color--4d72bb {
-    background-color: #4d72bb;
-}
+$background--main: $color--white-600;

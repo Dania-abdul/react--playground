@@ -14,11 +14,15 @@
 // ==========================================================================
 // SETTINGS
 // ==========================================================================
-@import './settings/colors';
-@import './settings/misc';
-@import './settings/sizes';
 @import './settings/typography';
+@import './settings/sizes';
+@import './settings/misc';
+@import './settings/colors';
 
+//---- typography
+@import './settings/styleguide/colors';
+@import './settings/styleguide/sizes';
+@import './settings/styleguide/typography';
 
 // ==========================================================================
 // VENDOR
@@ -48,20 +52,23 @@
 // ==========================================================================
 // OBJECTS
 // ==========================================================================
-@import './objects/buttons';
-@import './objects/chapters';
-@import './objects/styleguide-core';
-@import './objects/tokens.scss';
-@import './objects/tables';
-@import './objects/sections';
-@import './objects/parts';
-
+@import './objects/collapse';
+@import './objects/header';
 @import './objects/helpers';
-@import './objects/links';
 @import './objects/lists';
+@import './objects/mainpage';
 @import './objects/media';
+@import './objects/parts';
 @import './objects/typography';
-
-@import 'objects/mainpage';
-@import 'objects/collapse';
-@import 'objects/header';
+@import './objects/links';
+//---- styleguide
+@import './objects/styleguide/buttons';
+@import './objects/styleguide/chapters';
+@import './objects/styleguide/core';
+@import './objects/styleguide/headers';
+@import './objects/styleguide/links';
+@import './objects/styleguide/media';
+@import './objects/styleguide/sections';
+@import './objects/styleguide/tables';
+@import './objects/styleguide/typography';
+@import './objects/styleguide/tokens';

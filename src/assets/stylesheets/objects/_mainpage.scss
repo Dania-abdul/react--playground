@@ -3,15 +3,16 @@
 .main--page {
     height: 100%;  
     overflow: scroll;
+    background: $background--main;
 }
 
 .main__header {
     min-height: 160px;
-    background-color: #61DBFB;
+    background-color: $color-primary;
     text-align: center;
-    padding: 40px 0;
-    h1{
-        color:  white;
+    padding-top: 40px;
+    h1 {
+        color:  $color--white-800;
     }
 }
 
@@ -19,9 +20,11 @@
     max-width: 1200px;
     margin: 0 auto;
     padding-bottom: 40px;
-    background: lightgray;
     padding-top: 40px;
-    min-height: 100%;
+
+    h3 {
+        text-align: center;
+    }
 }
 
 .project-section {
@@ -67,9 +70,3 @@
         margin-right: 10px;
     }
 }
-
-
-h1, p {
-    font-family: Lato;
-  }
- 

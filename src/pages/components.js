@@ -31,7 +31,7 @@ export class Components extends React.Component {
     render() {
       return (   
         <div>
-            <h3>Search Components</h3>
+            <h3>React Components (title of active page)</h3>
             {[
             (index) => <div key="{section1}" className="project-section ">
                 <button className="project-section__header" onClick={() => this.handleExpandCollaps(`compo${index}`)}  data-id={`compo${index}`}>{index} - Click Counter</button>

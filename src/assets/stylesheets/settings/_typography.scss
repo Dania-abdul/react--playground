@@ -3,10 +3,32 @@
 // Variables concerning fonts: family, weights, styles, etc...
 // ==========================================================================
 
+// ------ Custom Stylinge
 
-// ----- Fonts
-$styleguide-font--pt-sans: 'PT Sans', sans-serif;
-$styleguide-font--pt-mono: 'PT Mono', monospace;
+// ----- Font families
 
-$styleguide-font--base: $styleguide-font--pt-sans;
-$styleguide-font--code: $styleguide-font--pt-mono;
+$font--ptmono: 'PT Mono', monospace ;
+$font--ubunto:  'Ubuntu', sans-serif;
+
+// ---------- Font sizes
+
+$title--s: 22px;
+$title--s-mobile: 16px;
+
+$title--m: 24px;
+$title--m-mobile: 22px;
+
+$title--l: 36px;
+$title--l-mobile: 24px;
+
+$label: 14px;
+
+$text--s: 18px;
+$text--s-mobile: 14px;
+
+$text--m: 22px;
+$text--m-mobile: 18px;
+
+//code editor
+$text-code: 16px;
+$text-code-lineheight: 1.6;

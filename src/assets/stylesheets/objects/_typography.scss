@@ -5,9 +5,21 @@
 // ==========================================================================
 // OBJECTS | Typography / Inline (WYSIWYG)
 // ==========================================================================
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-bottom: $spacing--xs;
+  font-family: $font--ubunto;
+}
 
-.text--styled {
-  h1 { }
+.custom--styled {
+  h1 {
+    font-size: $title--l;
+    font-family: $font--ubunto;
+   }
 
   h2 { }
 
@@ -25,33 +37,11 @@
   }
 }
 
+.title--m {
+  font-size: $title--m;
+  font-family: $font--ubunto;
+}
 
-.styleguide--styled {
-  font-family: $styleguide-font--base;
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: $styleguide-font--base;
-    margin: 0;
-  }
-  
-  h2 {
-    font-size: $styleguide-size--30px;
-    line-height: $styleguide-size--36px;
-    margin-bottom: 40px;
-  }
-  
-  h3 {
-    font-size: $styleguide-size--24px;
-    line-height: $styleguide-size--30px;
-    margin-bottom: 15px;
-  }
-  
-  p {
-    margin: 0;
-  }
+.text--m {
+  font-size: $text--m;
 }

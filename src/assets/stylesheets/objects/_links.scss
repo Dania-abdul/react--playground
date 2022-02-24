@@ -1,25 +1,20 @@
+
 // ==========================================================================
 // OBJECTS | Links
 // ==========================================================================
 
-.styleguide--styled {
+
     a {
-      text-decoration: none;
-  
-      .styleguide__content & {
-        color: $styleguide-color--red-400;
-        text-decoration: underline;
-        text-decoration-skip: ink;
-  
+        color: $color-links;
+        text-decoration: none;
         &:hover,
-        &:focus {
-          text-decoration: none;
+        &:focus { 
+            color: $color--white-600;   
+            text-decoration: none;
         }
-  
         &:focus {
-          outline: none;
+            outline: none;
         }
-      }
     }
-  }
-  
+
+      
