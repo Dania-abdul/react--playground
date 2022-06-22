@@ -1,4 +1,6 @@
 import * as React from "react"
+
+
 let currentPage = window.location.hash ? window.location.hash.split('#')[1].split('-')[0] : 'about'
 
 console.log(window.location.hash)
@@ -13,14 +15,13 @@ export class StyleGuide extends React.Component {
     render() {
         return (
             <div>
-                <article className="styleguide">
+                <article className="styleguide styleguide--styled">
                     <div className="styleguide__main">
                         <header className="styleguide__header">
-                            <div className="styleguide__brand styleguide--styled">
+                            <div className="styleguide__title">
                                 <a className="styleguide__logo-link" href="/styleguide">
-                                    <h1 className="sr-text">Styleguide 'Klantnaam'</h1>
-                                    <svg className="styleguide__logo" width="116" height="40" fill="#fff" aria-hidden="true"><use xlinkHref="#image--logo"/></svg>
-                                    <span className="styleguide__subtitle" aria-hidden="true">Styleguide</span>
+                                    <span className="sr-text"  aria-hidden="true">Styleguide</span>
+                                    <h1>Styleguide</h1>
                                 </a>
 
                                 <button className="styleguide-toggler" onClick={e => document.documentElement.classList.toggle('styleguide-nav--toggled')}>
@@ -31,7 +32,7 @@ export class StyleGuide extends React.Component {
                                     <span aria-hidden="true"></span>
                                 </button>
                             </div>
-                            <div className="styleguide-nav__wrapper styleguide--styled" data-active-page={currentPage}>
+                            <div className="styleguide-nav__wrapper" data-active-page={currentPage}>
                                 <nav className="styleguide-nav">
                                     <h2 className="sr-text">Menu</h2>
                             
@@ -124,7 +125,7 @@ export class StyleGuide extends React.Component {
                                                 </td>
                                             </tr>
                                             
-                                            <tr class="styleguide-table__row" aria-hidden="true"><td class="styleguide-table__seperator" colspan="3"></td></tr>
+                                            <tr class="styleguide-table__row" aria-hidden="true"><td class="styleguide-table__seperator" colSpan="3"></td></tr>
          
                                             <tr className="styleguide-table__row">
                                                 <td className="styleguide-table__cell styleguide--styled">
@@ -149,7 +150,7 @@ export class StyleGuide extends React.Component {
                                                 </td>
                                             </tr>
 
-                                            <tr class="styleguide-table__row" aria-hidden="true"><td class="styleguide-table__seperator" colspan="3"></td></tr>
+                                            <tr class="styleguide-table__row" aria-hidden="true"><td class="styleguide-table__seperator" colSpan="3"></td></tr>
 
                                         </tbody>
                                     </table>

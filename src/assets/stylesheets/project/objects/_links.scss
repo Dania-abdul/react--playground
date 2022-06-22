@@ -3,10 +3,9 @@
 // OBJECTS | Links
 // ==========================================================================
 
-
+.custom--styled {
     a {
         color: $color-links;
-        text-decoration: none;
         &:hover,
         &:focus { 
             color: $color--white-600;   
@@ -16,5 +15,6 @@
             outline: none;
         }
     }
+}
 
       

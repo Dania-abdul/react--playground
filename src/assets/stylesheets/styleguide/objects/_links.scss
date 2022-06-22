@@ -4,13 +4,9 @@
 
 .styleguide--styled {
     a {
-      text-decoration: none;
-  
       .styleguide__content & {
         color: $styleguide-color--red-400;
         text-decoration: underline;
-        text-decoration-skip: ink;
-  
         &:hover,
         &:focus {
           text-decoration: none;

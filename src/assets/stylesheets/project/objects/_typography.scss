@@ -5,17 +5,18 @@
 // ==========================================================================
 // OBJECTS | Typography / Inline (WYSIWYG)
 // ==========================================================================
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  padding-bottom: $spacing--xs;
-  font-family: $font--ubunto;
-}
 
-.custom--styled {
+
+.custom--styled {h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding-bottom: $spacing--xs;
+    font-family: $font--ubunto;
+  }
+  
   h1 {
     font-size: $title--l;
     font-family: $font--ubunto;

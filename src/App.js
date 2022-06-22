@@ -3,6 +3,8 @@ import React from 'react';
 
 import './App.css';
 import '../src/assets/stylesheets/timeline.css';
+// css in order 
+import '../src/assets/stylesheets/styleguide.scss';
 import '../src/assets/stylesheets/main.scss';
 
 import Layout from './layout';

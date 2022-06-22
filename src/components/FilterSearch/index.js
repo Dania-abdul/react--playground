@@ -1,14 +1,7 @@
 
-import React,{useState}  from 'react';
+import React  from 'react';
 import {
-  Button,
-  Input,
-  Footer,
-  Card,
-  CardBody,
-  CardImage,
-  CardTitle,
-  CardText
+  Input
 } from "mdbreact";
 
 import "./flags.min.css";
@@ -16,12 +9,13 @@ import countriesList from "./countries.json";
 
 export class FilterSearch extends React.Component {
   constructor(props) {
-      super(props);
-    };
-      
-    state = {
-      search: ""
-    };
+    super(props);
+  };
+    
+  state = {
+    search: ""
+  };
+
 
     renderCountryElement = country => {
       return (

@@ -30,7 +30,6 @@ let playground = () => {
                  //type->number
     var operatation = one / "dania" // bad habit, we need typescript (runtime struggles)
     //primitive types: number, string, boolean
-    var mudy_is_cool = true
     var sentence = "hello world!".concat("mother fucker")
 
 
@@ -65,7 +64,7 @@ let sum = (i1, i2) => {
  let find = (my_array, element_to_find) => {
      for (let index = 0; index < my_array.length; index++) {
          const element = my_array[index];
-         if(element == element_to_find){
+         if(element === element_to_find){
              return true
          }
          
@@ -78,7 +77,7 @@ let filter_unique_numbers = (my_array) => {
 
     for (let index = 0; index < my_array.length; index++) {
         const element = my_array[index];
-        if(find(new_array, element) == false){
+        if(find(new_array, element) === false){
             new_array.push(element)
         }   
         else{

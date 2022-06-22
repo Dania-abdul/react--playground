@@ -49,7 +49,7 @@ export class Tokens extends React.Component {
                                                 </td>
                                             </tr>
                                             
-                                            <tr class="styleguide-table__row" aria-hidden="true"><td class="styleguide-table__seperator" colspan="3"></td></tr>
+                                            <tr class="styleguide-table__row" aria-hidden="true"><td class="styleguide-table__seperator" colSpan="3"></td></tr>
          
                                             <tr className="styleguide-table__row">
                                                 <td className="styleguide-table__cell styleguide--styled">
@@ -74,7 +74,7 @@ export class Tokens extends React.Component {
                                                 </td>
                                             </tr>
 
-                                            <tr class="styleguide-table__row" aria-hidden="true"><td class="styleguide-table__seperator" colspan="3"></td></tr>
+                                            <tr class="styleguide-table__row" aria-hidden="true"><td class="styleguide-table__seperator" colSpan="3"></td></tr>
 
                                         </tbody>
                                     </table>

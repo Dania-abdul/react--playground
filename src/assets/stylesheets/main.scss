@@ -14,61 +14,45 @@
 // ==========================================================================
 // SETTINGS
 // ==========================================================================
-@import './settings/typography';
-@import './settings/sizes';
-@import './settings/misc';
-@import './settings/colors';
-
-//---- typography
-@import './settings/styleguide/colors';
-@import './settings/styleguide/sizes';
-@import './settings/styleguide/typography';
+@import './project/settings/typography';
+@import './project/settings/sizes';
+@import './project/settings/misc';
+@import './project/settings/colors';
 
 // ==========================================================================
 // VENDOR
 // ==========================================================================
 
-@import './vendor/normalize';
+@import './project/vendor/normalize';
 
 // ==========================================================================
 // TOOLS
 // ==========================================================================
-// @import './tools/functions';
-@import './tools/mixins';
+// @import './project/tools/functions';
+@import './project/tools/mixins';
 
 
 // ==========================================================================
 // GLOBAL
 // ==========================================================================
-@import './global/core';
-@import './global/buttons';
-@import './global/forms';
-@import './global/links';
-@import './global/lists';
-@import './global/media';
-@import './global/tables';
-@import './global/typography';
+@import './project/global/core';
+@import './project/global/buttons';
+@import './project/global/forms';
+@import './project/global/links';
+@import './project/global/lists';
+@import './project/global/media';
+@import './project/global/tables';
+@import './project/global/typography';
 
 // ==========================================================================
 // OBJECTS
 // ==========================================================================
-@import './objects/collapse';
-@import './objects/header';
-@import './objects/helpers';
-@import './objects/lists';
-@import './objects/mainpage';
-@import './objects/media';
-@import './objects/parts';
-@import './objects/typography';
-@import './objects/links';
-//---- styleguide
-@import './objects/styleguide/buttons';
-@import './objects/styleguide/chapters';
-@import './objects/styleguide/core';
-@import './objects/styleguide/headers';
-@import './objects/styleguide/links';
-@import './objects/styleguide/media';
-@import './objects/styleguide/sections';
-@import './objects/styleguide/tables';
-@import './objects/styleguide/typography';
-@import './objects/styleguide/tokens';
+@import './project/objects/collapse';
+@import './project/objects/header';
+@import './project/objects/helpers';
+@import './project/objects/lists';
+@import './project/objects/mainpage';
+@import './project/objects/media';
+@import './project/objects/typography';
+@import './project/objects/links';
+

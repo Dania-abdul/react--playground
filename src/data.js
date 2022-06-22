@@ -1609,42 +1609,6 @@ export const data = [
           closed_at: null,
           body:
             'Hi, I\'m trying to use firestack mainly to upload picture onto firebase storage.\r\nMy model firestack file: \r\n`import Firestack from \'react-native-firestack\'\r\nconst firestack = new Firestack();\r\nfirestack.setStorageUrl(someUrl).then(() => console.log("Project configured and ready to boot"));\r\nmodule.exports = firestack;`\r\n\r\nand in my main file i just require it as normal:\r\n`var firestack = require(\'../../Model/firestack\');`\r\nBut when i run, it keep throwing this error:\r\n<img width="487" alt="screen shot 2016-08-27 at 5 58 50 pm" src="https://cloud.githubusercontent.com/assets/16302244/18026635/66e162e4-6c80-11e6-8005-d219052edb33.png">\r\n\r\ndependencies i use:\r\n` "react-native-firestack": "^2.1.0",\r\n"firebase": "^3.3.0",\r\n"react": "^15.2.1",\r\n "react-native": "0.31.0",`\r\nAny help would be greatly appreciated!\r\n'
-        },
-        comment: {
-          url:
-            "https://api.github.com/repos/fullstackreact/react-native-firestack/issues/comments/243039810",
-          html_url:
-            "https://github.com/fullstackreact/react-native-firestack/issues/10#issuecomment-243039810",
-          issue_url:
-            "https://api.github.com/repos/fullstackreact/react-native-firestack/issues/10",
-          id: 243039810,
-          user: {
-            login: "heiseish",
-            id: 16302244,
-            avatar_url: "https://avatars.githubusercontent.com/u/16302244?v=3",
-            gravatar_id: "",
-            url: "https://api.github.com/users/heiseish",
-            html_url: "https://github.com/heiseish",
-            followers_url: "https://api.github.com/users/heiseish/followers",
-            following_url:
-              "https://api.github.com/users/heiseish/following{/other_user}",
-            gists_url: "https://api.github.com/users/heiseish/gists{/gist_id}",
-            starred_url:
-              "https://api.github.com/users/heiseish/starred{/owner}{/repo}",
-            subscriptions_url:
-              "https://api.github.com/users/heiseish/subscriptions",
-            organizations_url: "https://api.github.com/users/heiseish/orgs",
-            repos_url: "https://api.github.com/users/heiseish/repos",
-            events_url: "https://api.github.com/users/heiseish/events{/privacy}",
-            received_events_url:
-              "https://api.github.com/users/heiseish/received_events",
-            type: "User",
-            site_admin: false
-          },
-          created_at: "2016-08-29T06:10:32Z",
-          updated_at: "2016-08-29T06:10:32Z",
-          body:
-            'Hi, I try the example and it throws \r\n`\r\nExceptionsManager.js:76 Exception \'*** setObjectForKey: key cannot be nil\' was thrown while invoking uploadFile on target FirestackStorage with params (\r\n    "gs://someURL",\r\n    "photos/${filename}",\r\n    "/Users/G/Library/Developer/CoreSimulator/Devices/6AF0B403-BEAE-43B0-8B6B-A369B4384691/data/Containers/Data/Application/C8FB519B-4C67-4685-BB91-CD9DCE8DCE36/tmp/194308E8-4B18-4CD1-98FB-A8B6C3B5D8EE-32599-0003BFB508C9085F.jpg",\r\n        {\r\n        contentEncoding = base64;\r\n        contentType = "image/jpeg";\r\n    },\r\n    39\r\n)\r\n`\r\n\r\nI think it\'s the issue with facebook fetching function. '
         }
       },
       public: true,
@@ -2094,10 +2058,7 @@ export const data = [
             site_admin: false
           },
           created_at: "2016-08-29T05:31:52Z",
-          updated_at: "2016-08-29T05:31:52Z",
-          body:
-            "Of course.\r\n\r\n```javascript\r\n// The takePicture function\r\ntakePicture() {\r\n    this.camera.capture()\r\n      .then(({path}) => {\r\n        const filename = 'photo.jpg'\r\n        firestack.uploadFile(`photos/${filename}`, path, {\r\n          contentType: 'image/jpeg',\r\n          contentEncoding: 'base64',\r\n        })\r\n        .then((res) => {\r\n          console.log('result from upload file: ', res);\r\n        })\r\n        .catch((err) => {\r\n          console.log('error happened with uploadFile', err);\r\n        })\r\n      })\r\n      .catch(err => console.error(err));\r\n  }\r\n```\r\n\r\nand the render view\r\n\r\n```javascript\r\n        <Camera\r\n          ref={(cam) => {\r\n            this.camera = cam;\r\n          }}\r\n          captureTarget={Camera.constants.CaptureTarget.temp}\r\n          style={styles.preview}\r\n          aspect={Camera.constants.Aspect.fill}>\r\n          <Text style={styles.capture} onPress={this.takePicture.bind(this)}>[CAPTURE]</Text>\r\n        </Camera>\r\n```"
-        }
+          updated_at: "2016-08-29T05:31:52Z"        }
       },
       public: true,
       created_at: "2016-08-29T05:31:52Z",

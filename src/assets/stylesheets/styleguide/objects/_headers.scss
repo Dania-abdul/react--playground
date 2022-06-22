@@ -6,23 +6,16 @@
 .styleguide__header {
     background-color: $primary;
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
     z-index: 10;
     display: flex;
     flex-direction: column;
   }
   
-  .styleguide__brand {
+  .styleguide__title {
     padding: 20px 30px;
     height: 100px;
     position: relative;
     z-index: 1;
-  }
-  
-  .styleguide__logo-link {
-    display: inline-block;
   }
   
   .styleguide__logo {
@@ -33,14 +26,6 @@
     display: block;
   }
   
-  .styleguide__subtitle {
-    display: block;
-    color: $styleguide-color--white-800;
-    font-size: $styleguide-size--12px;
-    line-height: 1;
-    padding-top: 5px;
-    clear: both;
-  }
   
   // ==========================================================================
   // OBJECTS | Navigation
@@ -53,18 +38,18 @@
       display: block;
       background-color: $styleguide-color--black-200;
       position: fixed;
-      top: 100px;
+      top: 300px;
       right: 0;
       width: 260px;
       height: calc(100% - 100px);
       transform: translateX(260px);
       transition: transform 0.3s;
       overflow-y: auto;
+      z-index: 1;
     }
   }
   
   .styleguide-toggler {
-    background-color: transparent;
     width: 60px;
     height: 60px;
     position: absolute;
